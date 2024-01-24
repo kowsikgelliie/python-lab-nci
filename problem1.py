@@ -1,3 +1,9 @@
-name = input("what is your name: ")
+class Greeting:
+    name = ""
+    def __init__(self,name) -> None:
+        self.name = name
+    def greeting(self) -> None:
+        print(f"Hey {self.name} nice to meet you.")
 
-print(f"Hey {name}. Nice to meet you.")
+obj = Greeting(input("What is your name?"))
+obj.greeting()
